@@ -11,10 +11,11 @@
   line-height: 35px;
   font-size: 20px;
   cursor: pointer;
-  min-width: 550px;
+  margin-right: auto;
 }
 
 .list-group-item input {
+  width: 20%;
   line-height: 35px;
   font-size: 20px;
   text-align: center;
