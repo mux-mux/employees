@@ -19,7 +19,7 @@ class EmployeesAddForm extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    if (this.state.name.length < 3 || !this.state.salary) return;
+    if (this.state.name.length < 2 || !this.state.salary) return;
     this.props.onAdd(this.state.name, this.state.salary);
     this.setState({
       name: '',
@@ -39,6 +39,8 @@ class EmployeesAddForm extends Component {
             className="form-control new-post-label"
             placeholder="Input name"
             name="name"
+            araia-label="the name of the employee"
+            minLength={3}
             value={name}
             onChange={this.onValueChange}
           />
@@ -47,6 +49,8 @@ class EmployeesAddForm extends Component {
             className="form-control new-post-label"
             placeholder="Salary $"
             name="salary"
+            araia-label="set a salary to an employee"
+            required
             value={salary}
             onChange={this.onValueChange}
           />
