@@ -47,6 +47,17 @@ class App extends Component {
     });
   };
 
+  onInputSalary = (id, salary) => {
+    this.setState(({ data }) => ({
+      data: data.map((item) => {
+        if (item.id === id) {
+          return { ...item, salary: +salary.replace(/\D/g, '') };
+        }
+        return item;
+      }),
+    }));
+  };
+
   onToggleProp = (id, prop) => {
     this.setState(({ data }) => ({
       data: data.map((item) => {
@@ -103,6 +114,7 @@ class App extends Component {
 
         <EmployeesList
           data={visibleData}
+          onInputSalary={this.onInputSalary}
           onDelete={this.deleteItem}
           onToggleProp={this.onToggleProp}
         />

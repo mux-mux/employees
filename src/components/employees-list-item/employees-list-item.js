@@ -1,7 +1,7 @@
 import './employees-list-item.css';
 
 const EmployeesListItem = (props) => {
-  const { name, salary, onDelete, onToggleProp, increase, rise } = props;
+  const { name, salary, onDelete, onToggleProp, onInputSalary, increase, rise } = props;
 
   let classNames = 'list-group-item d-flex justify-content-between';
 
@@ -27,6 +27,7 @@ const EmployeesListItem = (props) => {
         className="list-group-item-input"
         aria-label="change the employee's salary"
         defaultValue={salary + '$'}
+        onChange={onInputSalary}
       />
       <div className="d-flex justify-content-center align-items-center">
         <button
