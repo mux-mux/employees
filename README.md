@@ -24,7 +24,7 @@
 ## Folder structure :open_file_folder:
 
 <div align="center">
-  <img src="https://jsgo.pro/media/structure/employees_folder_structure.jpg" alt="Employees Folder structure" width="100%" />
+  <img src="https://jsgo.pro/media/structure/employees_project_structure.png" alt="Employees Folder structure" width="100%" />
   <br>
 </div>
 
