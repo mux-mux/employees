@@ -1,7 +1,6 @@
 {
   "name": "employees",
   "version": "0.1.0",
-  "private": true,
   "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -35,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "nth-check": "^2.1.1",
+    "resolve-url-loader": "^5.0.0"
   }
 }
